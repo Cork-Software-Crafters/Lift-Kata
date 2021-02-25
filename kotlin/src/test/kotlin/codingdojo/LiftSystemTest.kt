@@ -3,11 +3,14 @@ package codingdojo
 import org.junit.jupiter.api.Test
 
 internal class LiftSystemTest {
-    // TODO: finish writing this test
+
     @Test
-    fun doSomething() {
+    fun `do something`() {
         val liftA = Lift("A", 0)
-        val lifts = LiftSystem(listOf(0, 1), listOf(liftA), emptyList())
-        lifts.tick()
+        val liftSystem = LiftSystem(floors = listOf(0, 1), lifts = listOf(liftA), calls = emptyList())
+
+        liftSystem.tick()
+
+        // TODO: finish writing this test
     }
 }
