@@ -18,8 +18,8 @@ Lift features:
 In this repository, that much is already implemented. The following features are not yet implemented:
 
 - a lift fulfills a _request_ when it moves to the requested floor and opens the doors.
-- a lift fulfills a _call_ when it moves to the correct floor, is about to go in the called direction, and opens the doors.
 - a lift can only move between floors if the doors are closed.
+- a lift fulfills a _call_ when it moves to the correct floor, is about to go in the called direction, and opens the doors.
 
 Lifts do not respond immediately or do everything at once. To simplify handling time in this exercise, the provided LiftSystem class has a 'tick' method. Every time you call it, the lift system should simulate a unit of time passing, and update its state according to what changes occurred during that time period. Lifts can move between floors or open their doors for example.
 
